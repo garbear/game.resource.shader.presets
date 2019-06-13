@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
-        <path>libretro/hlsl/ntsc/ntsc.cgp</path>
+        <hlslp-path>libretro/hlsl/ntsc/ntsc.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/ntsc/ntsc.glslp</glslp-path>        
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC RF -->
@@ -10,7 +11,8 @@
         <description>30012</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/tvout/tvout+ntsc-256px-composite.cgp</path>
+        <hlslp-path>libretro/hlsl/cgp/tvout/tvout+ntsc-256px-composite.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/presets/tvout/tvout+ntsc-256px-composite.glslp</glslp-path>        
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC Composite -->
@@ -19,7 +21,8 @@
         <description>30016</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/tvout/tvout+ntsc-320px-svideo.cgp</path>
+        <hlslp-path>libretro/hlsl/cgp/tvout/tvout+ntsc-320px-svideo.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/presets/tvout/tvout+ntsc-320px-svideo.glslp</glslp-path>         
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC S-video -->
@@ -28,7 +31,7 @@
         <description>30015</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/crt/4xbr-hybrid-crt-b.cgp</path>
+        <hlslp-path>libretro/hlsl/crt/4xbr-hybrid-crt-b.cgp</hlslp-path>
         <!-- CRT Display -->
         <category>30004</category>
         <!-- 4xBR Hybrid -->
@@ -37,7 +40,8 @@
         <description>30005</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/crt/crt-geom.cgp</path>
+        <hlslp-path>libretro/hlsl/crt/crt-geom.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/crt/crt-geom.glslp</glslp-path>        
         <!-- CRT Display -->
         <category>30004</category>
         <!-- CRT Geom -->
@@ -46,7 +50,7 @@
         <description>30036</description>
     </preset>
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/crt/crt-hyllian-multipass.cgp</path> -->
+<!--        <hlslp-path>libretro/hlsl/crt/crt-hyllian-multipass.cgp</hlslp-path> -->
         <!-- CRT Display -->
 <!--        <category>30004</category> -->
         <!-- Hylian -->
@@ -55,7 +59,7 @@
 <!--        <description>30007</description> -->
 <!--    </preset> -->
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/cgp/crt-royale-kurozumi.cgp</path> -->
+<!--        <hlslp-path>libretro/hlsl/cgp/crt-royale-kurozumi.cgp</hlslp-path> -->
         <!-- CRT Display -->
 <!--        <category>30004</category> -->
         <!-- Royale -->
@@ -64,7 +68,8 @@
 <!--        <description>30009</description> -->
 <!--    </preset> -->
     <preset>
-        <path>libretro/hlsl/handheld/lcd3x.cgp</path>
+        <hlslp-path>libretro/hlsl/handheld/lcd3x.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/handheld/lcd3x.glslp</glslp-path>        
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- LCD3x -->
@@ -73,7 +78,7 @@
         <description>30034</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/gameboy-screen-grid.cgp</path>
+        <hlslp-path>libretro/hlsl/cgp/gameboy-screen-grid.cgp</hlslp-path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Game Boy -->
@@ -82,7 +87,8 @@
         <description>30002</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-gba-color.cgp</path>
+        <hlslp-path>libretro/hlsl/handheld/lcd-grid-v2-gba-color.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/handheld/lcd-grid-v2-gba-color.glslp</glslp-path>        
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Game Boy Advance -->
@@ -91,7 +97,8 @@
         <description>30031</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-nds-color.cgp</path>
+        <hlslp-path>libretro/hlsl/handheld/lcd-grid-v2-nds-color.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/handheld/lcd-grid-v2-nds-color.glslp</glslp-path>        
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Nintendo DS -->
@@ -100,7 +107,8 @@
         <description>30030</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-psp-color.cgp</path>
+        <hlslp-path>libretro/hlsl/handheld/lcd-grid-v2-psp-color.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/handheld/lcd-grid-v2-psp-color.glslp</glslp-path>        
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- PlayStation Portable -->
@@ -109,7 +117,8 @@
         <description>30029</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/eagle/super-eagle.cgp</path>
+        <hlslp-path>libretro/hlsl/eagle/super-eagle.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/eagle/super-eagle.glslp</glslp-path>        
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- Super Eagle -->
@@ -118,7 +127,7 @@
         <description>30025</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv2-fast.cgp</path>
+        <hlslp-path>libretro/hlsl/xbr/xbr-lv2-fast.cgp</hlslp-path>
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv2 -->
@@ -127,7 +136,8 @@
         <description>30020</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv3.cgp</path>
+        <hlslp-path>libretro/hlsl/xbr/xbr-lv3.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/xbr/xbr-lv3.glslp</glslp-path>        
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv3 -->
@@ -136,7 +146,8 @@
         <description>30039</description>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv3-noblend.cgp</path>
+        <hlslp-path>libretro/hlsl/xbr/xbr-lv3-noblend.cgp</hlslp-path>
+        <glslp-path>libretro/glsl/xbr/xbr-lv3-noblend.glslp</glslp-path>        
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv3 (no blend) -->
@@ -145,7 +156,7 @@
         <description>30040</description>
     </preset>
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/xbr/xbr-mlv4-multipass.cgp</path> -->
+<!--        <hlslp-path>libretro/hlsl/xbr/xbr-mlv4-multipass.cgp</hlslp-path> -->
         <!-- Scaling Shader -->
 <!--        <category>30018</category> -->
         <!-- xBR-mlv4 -->
