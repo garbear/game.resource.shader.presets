@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
   id="game.shader.presets"
-  version="0.0.4"
+  version="0.0.5"
   name="Shader Preset Support"
-  provider-name="Team-Kodi">
+  provider-name="Team Kodi">
   <requires>@ADDON_DEPENDS@</requires>
   <extension
     point="kodi.shader.presets"
@@ -13,7 +13,9 @@
     <summary lang="en">Shader Preset Support</summary>
     <description lang="en">This library provides support for libretro "meta" shaders, or .cgp files.</description>
     <platform>@PLATFORM@</platform>
-    <noicon>true</noicon>
-    <nofanart>true</nofanart>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/kodi-game/game.shader.presets</source>
+    <assets>
+    </assets>
   </extension>
 </addon>
