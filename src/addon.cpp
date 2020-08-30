@@ -43,10 +43,7 @@ struct shader_preset_file
   std::string path;
 };
 
-CShaderPreset::~CShaderPreset()
-{
-  CLog::Get().SetType(SYS_LOG_TYPE_CONSOLE);
-}
+CShaderPreset::~CShaderPreset() = default;
 
 // CAddonBase overrides
 
