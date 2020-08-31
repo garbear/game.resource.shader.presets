@@ -49,10 +49,7 @@ CLog& CLog::Get(void)
   return _instance;
 }
 
-CLog::~CLog(void)
-{
-  SetPipe(NULL);
-}
+CLog::~CLog(void) = default;
 
 bool CLog::SetType(SYS_LOG_TYPE type)
 {
