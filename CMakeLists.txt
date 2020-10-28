@@ -1,23 +1,17 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.5)
 project(game.shader.presets)
-
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 include(CheckIncludeFiles)
 
 # --- Add-on Dependencies ------------------------------------------------------
 
 find_package(Kodi REQUIRED)
-find_package(kodiplatform REQUIRED)
-find_package(p8-platform REQUIRED)
 
-include_directories(${INCLUDES}
+include_directories(${KODI_INCLUDE_DIR}
+                    ${KODI_INCLUDE_DIR}/.. # Hack way with "/..", need bigger Kodi cmake rework to match right include ways (becomes done in future)
                     ${PROJECT_SOURCE_DIR}/src/depends/libretro-common/include
                     ${PROJECT_SOURCE_DIR}/src/depends
-                    ${PROJECT_SOURCE_DIR}/src
-                    ${KODI_INCLUDE_DIR}/.. # Hack way with "/..", need bigger Kodi cmake rework to match right include ways (becomes done in future)
-                    ${kodiplatform_INCLUDE_DIRS}
-                    ${p8-platform_INCLUDE_DIRS})
+                    ${PROJECT_SOURCE_DIR}/src)
 
 set(SHADERPRESETS_SOURCES src/addon.cpp
                      src/log/Log.cpp
@@ -26,7 +20,6 @@ set(SHADERPRESETS_SOURCES src/addon.cpp
                      src/utils/RarchTranslator.cpp
                      src/utils/StringUtils.cpp
                      src/utils/URIUtils.cpp
-                     
                      src/depends/file_path_special.c
                      src/depends/gfx/video_shader_parse.c
                      src/depends/gfx/video_state_tracker.c
@@ -51,7 +44,6 @@ set(SHADERPRESETS_HEADERS src/addon.h
                      src/utils/RarchTranslator.h
                      src/utils/StringUtils.h
                      src/utils/URIUtils.h
-                     
                      src/depends/file_path_special.h
                      src/depends/gfx/video_shader_parse.h
                      src/depends/gfx/video_state_tracker.h
@@ -85,9 +77,6 @@ if(HAVE_SYSLOG)
   list(APPEND SHADERPRESETS_SOURCES src/log/LogSyslog.cpp)
   list(APPEND SHADERPRESETS_HEADERS src/log/LogSyslog.h)
 endif()
-
-list(APPEND DEPLIBS ${kodiplatform_LIBRARIES}
-                    ${p8-platform_LIBRARIES})
 
 if(CORE_SYSTEM_NAME STREQUAL osx)
   list(APPEND DEPLIBS "-framework CoreFoundation")

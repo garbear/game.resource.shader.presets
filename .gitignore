@@ -292,6 +292,16 @@ __pycache__/
 .project
 .settings
 
+# Debian build files
+debian/changelog
+debian/files
+debian/*.log
+debian/*.substvars
+debian/.debhelper/
+debian/tmp/
+debian/kodi-game-*/
+obj-x86_64-linux-gnu/
+
 # Pre-generated XML
 game.shader.presets/addon.xml
 

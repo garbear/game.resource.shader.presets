@@ -1,0 +1,21 @@
+Source: kodi-game-shader-presets
+Priority: extra
+Maintainer: Garrett Brown <themagnificentmrb@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), cmake,
+               kodi-addon-dev, libtinyxml-dev
+Standards-Version: 4.1.2
+Section: libs
+
+Package: kodi-game-shader-presets
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kodi binary addon for libretro meta-shader (.cgp) support
+  Kodi binary addon for libretro meta-shader (.cgp) support
+
+Package: kodi-game-shader-presets-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: debug symbols for Shader Preset add-on for Kodi's Game API
+  debug symbols for Shader Preset add-on for Kodi's Game API
