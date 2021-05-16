@@ -19,8 +19,4 @@
  */
 #pragma once
 
-#if defined(TARGET_DARWIN)
-#include "posix/os-types.h"
-#endif
-
 #include <kodi/AddonBase.h>
